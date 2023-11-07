@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transeleos</title>
+    <link href="popup.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="transeleos_main">
+        <img
+          src="../assets/logo-no-bg.png"
+          alt="logo"
+          id="logo"
+          style="width: 200px; height: 200px"
+        />
+
+        <!-- Add a div to display notifications -->
+        <div id="notification" style="display: none"></div>
+
+        <div id="transeleos_form">
+          <div id="loading-container" style="display: none">
+            <div class="spinner"></div>
+            <p>This takes a while. Please be patient...</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        Welcome to transeleos. You'll see a little icon on youtube videos right
+        controls. simply click and away you go
+      </footer>
+    </div>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

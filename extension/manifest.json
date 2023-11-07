@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "Transeleos",
+  "version": "1.0.0",
+  "author": "dhxmo",
+  "description": "so nothing gets lost in translation",
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*.youtube.com/*",
+    "https://<add your bucket name here>.s3.ap-south-1.amazonaws.com/translated_audio/*",
+    "<add your server ip here"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/*"
+      ],
+      "js": [
+        "scripts/content-script.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/logo-no-bg.png"
+      ],
+      "matches": [
+        "https://*.youtube.com/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/logo-no-bg.png",
+      "24": "assets/logo-no-bg.png",
+      "32": "assets/logo-no-bg.png"
+    },
+    "default_title": "Transeleos",
+    "default_popup": "popup/popup.html"
+  }
+}
