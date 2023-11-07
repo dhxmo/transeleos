@@ -42,4 +42,5 @@ so first things:
 3. create role and add access key to .env
 4. set up some cloud compute. once in, clone your repo into it and install docker-compose on the server machine
 5. `docker-compose build && docker-compose up`
-6. the server should be up now. take the server IP address and make it into the [extensions repo]()
+6. the server should be up now. take the server IP and S3 bucket name and add to the extension .env
+7.
